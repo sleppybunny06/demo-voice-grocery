@@ -1,0 +1,5 @@
+{
+  "name": "Zepto Lite",
+  "description": "Voice-enabled shopping demo app with Gemini intent extraction.",
+  "requestFramePermissions": ["microphone", "geolocation"]
+}
