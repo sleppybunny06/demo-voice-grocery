@@ -2,19 +2,38 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Voice Grocery Demo
 
-This contains everything you need to run your app locally.
+A lightweight Vite + React demo for building a voice-assisted grocery shopping experience with Gemini-powered natural-language item matching.
 
-View your app in AI Studio: https://ai.studio/apps/a032c41c-637f-454a-ac66-ac2db74ca2f2
+## Features
 
-## Run Locally
+- Voice input for grocery requests.
+- Text-based natural-language item matching.
+- Searchable grocery catalog and cart management.
+- Simple checkout flow with geolocation-based address detection.
 
-**Prerequisites:**  Node.js
+## Run locally
 
+**Prerequisites:** Node.js 20+.
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Copy the example environment file and add your Gemini API key:
+   ```bash
+   cp .env.example .env.local
+   ```
+3. Set `GEMINI_API_KEY` in `.env.local`.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Available scripts
+
+- `npm run dev` — start the local development server on port 3000.
+- `npm run lint` — run TypeScript checks.
+- `npm run build` — create a production build.
+- `npm run preview` — preview the production build locally.
